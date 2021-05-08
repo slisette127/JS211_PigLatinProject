@@ -14,34 +14,30 @@ const rl = readline.createInterface({
 //chair
 //egg
 
+
 const pigLatin = (word) => {
-  //case of starting iwth consonante
-  //remove all consonant before first vowel occurs
-  //split word into an array
-  // loop through our array
-  //at each index check if itts vowel or consonate. what re voels 'aeiou'
-      //if consonate <--- skip
-      //if vowel && index > 0
-      //take all consonates to up until the first vowel
-      // ten "concat" them to the end of hte word
-      //then also "concat"them to the end of array
-      //join your array back to
-  //break out of loop    
+  let vowelIndex;
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  word = word.toLowerCase()
+  if(vowels.includes(word[0])) {
+    return word + "hay";
+  } else {
+    for (let char of word) {
+      if ( vowels.includes(char)) {
+        vowelIndex = word.indexOf(char);
+        break;
+      }
+    }
+    return word.slice(vowelIndex) + word.slice(0, vowelIndex) + "ay";
+  }
+  }
 
-  //case of starting with vowel ..again what is a vowel
-  //if index 0 === vowel
-    //"concat" yay to the end of the word
-
-
-  //return translated word
-  
-  
 //helpful methods: "includes" "indexOf" "slice"
 
 
   // Your code here
 
-}
+
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js

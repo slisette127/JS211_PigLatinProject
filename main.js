@@ -20,7 +20,7 @@ const pigLatin = (word) => {
   const vowels = ['a', 'e', 'i', 'o', 'u']
   word = word.toLowerCase()
   if(vowels.includes(word[0])) {
-    return word + "hay";
+    return word + "yay";
   } else {
     for (let char of word) {
       if ( vowels.includes(char)) {

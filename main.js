@@ -18,7 +18,7 @@ const rl = readline.createInterface({
 const pigLatin = (word) => {
   let vowelIndex;
   const vowels = ['a', 'e', 'i', 'o', 'u']
-  word = word.toLowerCase()
+  word = word.toLowerCase().trim()
   if(vowels.includes(word[0])) {
     return word + "yay";
   } else {

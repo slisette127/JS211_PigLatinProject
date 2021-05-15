@@ -11,8 +11,7 @@ const rl = readline.createInterface({
 });
 
 
-//chair
-//egg
+
 
 
 const pigLatin = (word) => {
@@ -35,7 +34,7 @@ const pigLatin = (word) => {
 //helpful methods: "includes" "indexOf" "slice"
 
 
-  // Your code here
+
 
 
 
